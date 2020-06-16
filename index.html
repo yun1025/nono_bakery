@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>노노베이커리</title>
+		<meta charset="utf-8">
+		
+		<!-- css -->
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style_1200.css" rel="stylesheet" media="screen and (max-width: 1200px)">
+		<link href="css/tablet.css" rel="stylesheet" media="screen and (max-width: 768px)">
+		
+		<!-- jquery -->
+		<link href="js/jquery-ui.css" rel="stylesheet">
+		
+		<script src="js/jquery-1.12.3.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		
+		<!-- script -->
+		<script src="js/script.js"></script>
+	</head>
+	
+	<body>
+		<!-- header -->
+		<header>
+			<!-- <nav class="nav">
+				<ul>
+					<li class="action"><a href="#">회원가입</a></li>
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">고객센터</a></li>
+				</ul>
+			</nav> -->
+			
+			<h1><a href="#"><img src="images/logo.png" alt="노노베이커리 로고" title="노노베이커리 로고"></a></h1>
+			
+			<nav class="menu">
+				<ul>
+					<li>
+						<a href="html/sub_1-1.html">베이커리 소개</a>
+					</li>
+					<li>
+						<a href="html/sub_2-1.html">베이커리 메뉴</a>
+						
+						<ul class="sub_menu">
+							<li><a href="html/sub_2-1.html">저탄수빵</a></li>
+							<li><a href="html/sub_2-2.html">키토빵</a></li>
+							<li><a href="html/sub_2-3.html">비건빵</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="html/sub_3-1.html">디저트 메뉴</a>
+						
+						<ul class="sub_menu">
+							<li><a href="html/sub_3-1.html">베이커리류</a></li>
+							<li><a href="html/sub_3-2.html">케이크류</a></li>
+							<li><a href="html/sub_3-3.html">과자류</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="html/sub_4-1.html">커뮤니티</a>
+						
+						<ul class="sub_menu">
+							<li><a href="html/sub_4-1.html">공지사항</a></li>
+							<li><a href="html/sub_4-2.html">이벤트</a></li>
+							<li><a href="html/sub_4-3.html">자주묻는 질문</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header> <!-- //header -->
+		
+		
+		<!-- slider -->
+		<section id="main_slide">
+			<h2 class="hidden">메인 슬라이드 영역</h2>
+			
+			<div class="slide_img">
+				<p><img src="images/slider_01.png" alt="5월의 신메뉴 티타임의 품격을 높여주는 티푸드 디저트 저탄수빵과 키토빵의 신메뉴가 출시되었어요" title="메인 이벤트 배너"></p>
+				<p><img src="images/slider_02.png" alt="글루텐프리 저칼로리빵 아침을 건강하고 든든하게 슬기로운 아침생활 오늘 아침은 호밀빵으로 든든하게 시작해요" title="메인 이벤트 배너"></p>
+				<p><img src="images/slider_03.png" alt="키토빵 신메뉴 유기농 생크림과 자연치즈의 만남 크림치즈 케이크 출시 바삭한 반죽안에 사르르 녹는 크림치즈를 느껴봐요" title="메인 이벤트 배너"></p>
+			</div>
+
+			<p class="left_button"><img src="images/left_button.png" alt="배너 이동" title="배너 이동"></p>
+			<p class="right_button"><img src="images/right_button.png" alt="배너 이동" title="배너 이동"></p>
+		</section> <!-- //slider -->
+		
+		
+		<!-- contnets-->
+		<section id="contents">
+			
+			<!-- about us -->
+			<div class="about_us">
+				<div class="main01_text">
+					<h3 class="con_title">
+						ABOUT US<span>베이커리 소개</span>
+						<p>&nbsp; </p>
+					</h3>
+					
+					노노베이커리는 밀가루를 사용하지 않습니다<br>
+					밀가루 대신 국내산 통밀가루와 아몬드가루를 사용해 반죽을 만들고
+					설탕 대신 설탕대체제인 말티콜과 말린 과일을 넣어 단맛을 냅니다
+					<br><br>
+					가공버터가 아닌 100% 동물성 버터만 사용하고 있지만 일부 메뉴는
+					식물성 오일을 사용하기 때문에 채식위주의 식단을 하고계신 분들도
+					믿고 드실 수 있습니다
+					
+					<p>
+						<button onclick="location.href='html/sub_1-1.html'">
+							자세히보기
+							<img src="images/button_icon.png" alt="버튼 아이콘" title="버튼 아이콘">
+						</button>
+					</p>
+				</div>
+				
+				<div class="main01_img">
+					<img src="images/main01_img.png" alt="매장 사진" title="매장 사진">
+				</div>
+			</div>	<!-- //about us -->
+			
+			<!-- best menu -->
+			<div class="best_menu">
+				<h3 class="con_title">
+					BEST MENU<span>가장 인기있는 메뉴</span>
+					<p>&nbsp; </p>
+				</h3>
+				
+				<ul class="best_list">
+					<li>
+						<div class="img_warp">
+							<a href="html/sub_2-4.html"><img src="images/main02_img1.png" alt="[글루텐프리] 통통 통밀빵 사진" title="[글루텐프리] 통통 통밀빵 사진"></a>
+						</div>
+						
+						<p class="b_l_title"><a href="html/sub_2-4.html">[글루텐프리] 통통 통밀빵</a></p>
+						<p class="b_l_con"><a href="html/sub_2-4.html">국내산 통밀가루, 무지방 우유, 이스트, 소금</a></p>
+					</li>
+					<li>
+						<div class="img_warp">
+							<a href="html/sub_2-4.html"><img src="images/main02_img2.png" alt="[키토빵] 치즈폭발! 치즈빵 사진" title="[키토빵] 치즈폭발! 치즈빵 사진"></a>
+						</div>
+						
+						<p class="b_l_title"><a href="html/sub_2-4.html">[키토빵] 치즈폭발! 치즈빵</a></p>
+						<p class="b_l_con"><a href="html/sub_2-4.html">아몬드가루, 베이킹파우더, 달걀, 버터, 사워크림, 슈레드 체더 치즈(자연치즈)</a></p>
+					</li>
+					<li>
+						<div class="img_warp">
+							<a href="html/sub_2-4.html"><img src="images/main02_img3.png" alt="[비건빵] 겉바속촉 바나나 스콘 사진" title="[비건빵] 겉바속촉 바나나 스콘"></a>
+						</div>
+						
+						<p class="b_l_title"><a href="html/sub_2-4.html">[비건빵] 겉바속촉 바나나 스콘</a></p>
+						<p class="b_l_con"><a href="html/sub_2-4.html">국내산 통밀가루, 베이킹파우더, 베이킹소다, 바나나, 유기농 두유, 포도씨유, 미숫가루</a></p>
+					</li>
+					<li>
+						<div class="img_warp">
+							<a href="html/sub_2-4.html"><img src="images/main02_img4.png" alt="[글루텐프리] 풍미가득 시나몬롤 사진" title="[글루텐프리] 풍미가득 시나몬롤 사진"></a>
+						</div>
+						
+						<p class="b_l_title"><a href="html/sub_2-4.html">[글루텐프리] 풍미가득 시나몬롤</a></p>
+						<p class="b_l_con"><a href="html/sub_2-4.html">국내산 통밀가루, 무지방 우유, 레몬즙, 시나몬 가루, 아몬드, 꿀</a></p>
+					</li>
+					<li>
+						<div class="img_warp">
+							<a href="html/sub_2-4.html"><img src="images/main02_img1.png" alt="[글루텐프리] 통통 통밀빵 사진" title="[글루텐프리] 통통 통밀빵 사진"></a>
+						</div>
+						
+						<p class="b_l_title"><a href="html/sub_2-4.html">[글루텐프리] 통통 통밀빵</a></p>
+						<p class="b_l_con"><a href="html/sub_2-4.html">국내산 통밀가루, 무지방 우유, 이스트, 소금</a></p>
+					</li>
+					<li>
+						<div class="img_warp">
+							<a href="html/sub_2-4.html"><img src="images/main02_img2.png" alt="[키토빵] 치즈폭발! 치즈빵 사진" title="[키토빵] 치즈폭발! 치즈빵 사진"></a>
+						</div>
+						
+						<p class="b_l_title"><a href="html/sub_2-4.html">[키토빵] 치즈폭발! 치즈빵</a></p>
+						<p class="b_l_con"><a href="html/sub_2-4.html">아몬드가루, 베이킹파우더, 달걀, 버터, 사워크림, 슈레드 체더 치즈(자연치즈)</a></p>
+					</li>
+					<li>
+						<div class="img_warp">
+							<a href="html/sub_2-4.html"><img src="images/main02_img3.png" alt="[비건빵] 겉바속촉 바나나 스콘 사진" title="[비건빵] 겉바속촉 바나나 스콘"></a>
+						</div>
+						
+						<p class="b_l_title"><a href="html/sub_2-4.html">[비건빵] 겉바속촉 바나나 스콘</a></p>
+						<p class="b_l_con"><a href="html/sub_2-4.html">국내산 통밀가루, 베이킹파우더, 베이킹소다, 바나나, 유기농 두유, 포도씨유, 미숫가루</a></p>
+					</li>
+					<li>
+						<div class="img_warp">
+							<a href="html/sub_2-4.html"><img src="images/main02_img4.png" alt="[글루텐프리] 풍미가득 시나몬롤 사진" title="[글루텐프리] 풍미가득 시나몬롤 사진"></a>
+						</div>
+						
+						<p class="b_l_title"><a href="html/sub_2-4.html">[글루텐프리] 풍미가득 시나몬롤</a></p>
+						<p class="b_l_con"><a href="html/sub_2-4.html">국내산 통밀가루, 무지방 우유, 레몬즙, 시나몬 가루, 아몬드, 꿀</a></p>
+					</li>
+					<li>
+						<div class="img_warp">
+							<a href="html/sub_2-4.html"><img src="images/main02_img1.png" alt="[글루텐프리] 통통 통밀빵 사진" title="[글루텐프리] 통통 통밀빵 사진"></a>
+						</div>
+						
+						<p class="b_l_title"><a href="html/sub_2-4.html">[글루텐프리] 통통 통밀빵</a></p>
+						<p class="b_l_con"><a href="html/sub_2-4.html">국내산 통밀가루, 무지방 우유, 이스트, 소금</a></p>
+					</li>
+				</ul>
+			</div> <!-- //best menu -->
+			
+			
+			<!-- //board -->
+			<section id="board">
+				<!-- notice -->			
+				<div class="notice">
+					<h3 class="con_title con_board">
+						NOCICE<span>공지사항</span>
+						<p class="more"><a href="#"><img src="images/more.png" alt="공지사항 더보기" title="공지사항 더보기"></a></p>
+					</h3>
+					
+					<ul class="notice_list">
+						<li>
+							<a href="#">5월 황금연휴 기간의 배송 및 휴일 안내입니다</a>
+							<span>2020-04-27</span>
+						</li>
+						<li>
+							<a href="#">고객센터의 운영시간이 변경되었습니다</a>
+							<span>2020-03-02</span>
+						</li>
+						<li>
+							<a href="#">노노베이커리는 작업실 소독과 작업자 위생을 엄격하게 관리합니다</a>
+							<span>2020-02-28</span>
+						</li>
+					</ul>
+					
+					<p>
+						<a href="#"><img src="images/notice_img.png" alt="INSTARGRAM NOTICE 인스타그램에서 노노베이커리의 베이킹 과정을 볼 수 있어요 INSTAR ID  @nono_bakery" title="인스타그램으로 이동"></a>
+					</p>
+				</div> <!-- //notice -->
+				
+				
+				<!-- event -->
+				<div class="event">
+					<h3 class="con_title con_board">
+						EVENT<span>이벤트 소식</span>
+						<p class="more"><a href="#"><img src="images/more.png" alt="이벤트 더보기" title="이벤트 더보기"></a></p>
+						
+						<a href="#"><img src="images/event_img.png" alt="[5월 한정판매] 감사의 마음이 담긴 마카롱 선물세트 ※ 선물세트는 선불 주문만 받습니다" title="이벤트 배너"></a>
+					</h3>
+				</div> <!-- //event -->
+				
+				
+				<!-- map -->
+				<div class="map">
+					<div class="map_01">
+						<img src="images/map_img.png" alt="지도 이미지" title="지도 이미지">
+					</div>
+					
+					<div class="map_02">
+						<h3>CUSTOMER<span>고객센터</span></h3>
+						
+						<p>
+							<img src="images/cus_icon.png" alt="고객센터 아이콘 이미지" title="고객센터 아이콘 이미지">
+							<span>031-000-0000</span>
+						</p>
+						
+						<ul>
+							<li><span>평일</span>오전 09:00 ~ 오후 06:00</li>
+							<li><span>점심</span>오후 12:30 ~ 오후 02:00</li>
+							<li><span>휴무</span>토 / 일 / 공휴일</li>
+						</ul>
+					</div>
+					
+					<div class="map_03">
+						<h3>LOCATION<span>오시는 길</span></h3>
+						
+						<ul>
+							<li>
+								<span>주소</span>
+								<p>경기 성남시 중원구 광명로 4 (성남동, 아트팰리스) 4, 5층</p>
+							</li>
+							<li>
+								<span class="not_spacing">지하철</span>
+								<p>분당선 및 8호선 모란역 2번 출구 앞 50M, 오른쪽 아트팰리스 건물</p>
+							</li>
+							<li>
+								<span>버스</span>
+								<p>모란역, 모란시장, 풍생중고교 또는 모란역 6번출구 앞에서 하차</p>
+							</li>
+						</ul>
+					</div>
+				</div> <!-- //map-->
+			</section> <!-- //board -->
+		</section> <!-- //contents -->
+	
+		
+		<!-- footer -->
+		<footer>
+			<nav>
+				<ul class="f_nav">
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>				
+					<li><a href="#">이용안내</a></li>				
+					<li><a href="#">배송안내</a></li>				
+					<li><a href="#">카카오톡 플러스친구</a></li>				
+				</ul>
+			</nav>
+			
+			<h2><a href="#"><img src="images/b_logo.png" alt="노노베이커리 로고" title="노노베이커리 로고"></a></h2>
+			
+			<p>
+				법인명(상호) : 노노베이커리   |   대표자 : 김뫄뫄   |   개인정보책임자 : 김뫄뫄   |   사업자등록번호 : 000-00-00000<br>
+				통신판매업 신고 : 성남 제 000000호   |   전화 : 031-000-0000   |   팩스 : 031-000-0000<br>
+				주소 : 경기 성남시 중원구 광명로 4 (성남동, 아트팰리스) 4, 5층<br>
+				
+				<strong>COPYRIGHT ⓒ 2020 노노베이커리 ALL RIGHTS RESERVED</strong>
+			</p>
+		</footer> <!-- //footer -->
+	</body>
+</html>

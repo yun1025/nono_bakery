@@ -1,0 +1,105 @@
+@chartset 'utf-8';
+/* header */
+.nav > ul{ margin-right: 20px;}
+
+
+/* slider */
+.left_button { left: 5%;}
+.right_button { right: 5%;}
+
+@media screen and (max-width: 835px) {
+	.left_button { top: 40%; left: 3%;}
+	.right_button { top: 40%; right: 3%;}
+}
+
+/* contents */
+.con_title { font-size: 25px;}
+	.con_title > span { font-size: 14px;}
+	.con_title > p { margin: 15px 0;}
+
+
+	/* about_us */	
+	.about_us { max-width: 1140px; padding: 0 10px;}
+		
+		.main01_text { width: 40%;}
+			.main01_img { margin-left: 5%;}
+
+				
+	/* best_menu */
+	.best_list > li { width: 23%;}
+
+	@media screen and (max-width: 1017px) {
+		.best_list { margin: 20px 3px;}
+			.best_list > li { margin: 0 8px 30px;}
+	}
+	
+	@media screen and (max-width: 922px) {
+		.best_list > li { width: 31%;}
+		.best_list > li:last-child { display: block;}
+	}
+
+
+	/* board */
+	#board { padding: 0 10px;}
+		.con_board > p { float: right; width: 23px; height: 22px; background: #fff; margin: 6px 0 20px;}
+		@media screen and (max-width: 922px) {
+			.con_board { margin-bottom: 10px;}
+			.con_board p { margin-bottom: 10px;}
+		}
+			
+		/* notice */
+		.notice_list li { font-size: 14px; padding: 14px 10px 10px;}
+			.notice > p { margin-top: 8px;}
+
+		@media screen and (max-width: 1120px) {
+			.notice_list li { padding: 10px 10px 8px;}
+		}
+		
+		@media screen and (max-width: 922px) {
+			.notice { width: 46%;}			
+			.notice_list li a { width: 65%;}
+		}
+
+				
+		/* event */
+		.event img { width: 100%; margin-top: 0px;}
+		
+		@media screen and (max-width: 922px) {
+			.event { width: 51%;}
+		}
+			
+	
+		/* map */
+		.map ul { margin-top: 10px; line-height: 22px;}
+			.map ul li { margin-bottom: 2px;}
+		
+		.map_01 { width: 73%;}
+		.map_02,.map_03 { width: 24%;}
+		
+		
+		@media screen and (max-width: 1128px) {
+			.map { margin-top: 5px;}
+				.map ul li p { width: 78%;}
+				
+			.map_01 { width: 63%;}
+				.map_01 img { height: 360px;}
+			
+			.map_02,.map_03 { width: 35%;}	
+
+		}
+		
+		@media screen and (max-width: 854px) {
+			.map ul li p { width: 75%;}
+		}
+		
+		
+/* footer */
+@media screen and (max-width: 875px) {
+	.f_nav { max-width: 660px;}
+		.f_nav > li { padding: 20px 30px;}
+}
+
+@media screen and (max-width: 678px) {
+	.f_nav { max-width: 410px; font-size: 11px;}
+		.f_nav > li { padding: 20px 10px;}
+}

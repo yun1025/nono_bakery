@@ -1,0 +1,53 @@
+@chartset 'utf-8';
+/* slider */
+.left_button { left: 2%;}
+.right_button { right: 2%;}
+
+.left_button img, .right_button img { width: 80%;}
+
+/* about_sub */
+.about_us { margin: 50px auto 70px;}
+	.main01_text { width: 100%; margin-bottom: 30px;}
+		.main01_text > p { text-align: center; margin-top: 30px;}
+		
+	.main01_img { width: 100%; margin-left: 0;}
+
+/* best_menu */	
+@media screen and (max-width: 710px) {
+	.best_list > li { width: 30%; margin-right: 10px;}
+}	
+
+@media screen and (max-width: 562px) {
+	.best_list > li { width: 46%; margin-right: 10px;}
+	.best_list > li:last-child { display: none;}
+}
+	
+/* board */
+.notice { width: 100%;}
+	.notice_list li { padding: 13px 10px 10px; font-size: 15px;}
+	.notice > p { margin-top: 14px;}
+	
+/* event */
+.event { width: 100%; margin-top: 50px;}
+	.event img { margin-top: 4px;}
+	
+	
+/* map */
+.map_01 { width: 100%; margin-top: 0px;}
+
+.map_02 { float: left; width: 48%; margin-top: 20px; padding-bottom: 40px; border-right: 1px solid #ccc;}
+.map_03 { float: right;  width: 48%; margin-top: 20px;}
+
+@media screen and (max-width: 565px) {
+	.map ul li span { width: 100%;}
+	.map ul li p { width: 100%;}
+	
+	.map_02 { padding-bottom: 0;}
+	.map_02 ul li { margin-bottom: 15px;}
+	
+	.map_02 > p { font-size: 25px;}
+}
+
+/* footer */
+.f_nav { max-width: 460px;}
+		.f_nav > li { padding: 20px 10px;}
