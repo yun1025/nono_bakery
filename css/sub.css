@@ -1,21 +1,65 @@
-@chartset 'utf-8';
+	@chartset 'utf-8';
 
 /* 베이커리 소개 */
 .insa { margin-bottom: 50px;}
 	.insa > p img { width: 100%;}
-	.insa > div { max-width: 1220px; margin: auto; padding: 50px 10px; line-height: 25px; font-size: 16px; word-break: keep-all;}
-		.insa > div > h3 { text-align: center; font-size: 25px; color: #523f31; margin-bottom: 40px;}
+	.insa > article { max-width: 1220px; margin: auto; padding: 50px 10px; line-height: 25px; font-size: 16px; word-break: keep-all;}
+		.insa > article > h3 { text-align: center; font-size: 25px; color: #523f31; margin-bottom: 40px;}
 		
-.insa_type2 { background: #efefef; overflow: hidden; padding: 50px 0 80px; margin-bottom: 100px;}
+.insa_type2 { background: #efefef; overflow: hidden; padding: 80px 0; margin-bottom: 100px;}
 	.insa_type2 h3 { color: #523f31; font-size: 25px;}
 
-	.type_01 h3 { margin: 60px 0 20px;}
-	.type_01 > p { float: left; margin-right: 30px; margin-bottom: 80px;}
-	.type_01 > div { float: left; width: 430px;}
+.type_img { width: 64%; max-width: 742px;}
+	.type_img img { width: 100%;}
+.type_text { width: 36%; max-width: 458px; box-sizing: border-box; line-height: 23px; font-size: 16px;}
+
+@media screen and (max-width: 1024px) {
+	.type_img { width: 55%; max-width: 550px;}
+	.type_text { width: 45%; max-width: 45%;}
+
+}
+
+@media screen and (max-width: 800px) {
+	.type_img { width: 100%; max-width: 100%;}
+	.type_text { width: 100%; max-width: 100%;}
+}
 	
-	.type_02 h3 { margin: 45px 0 20px;}	
-	.type_02 > div { float: left; width: 430px; margin-right: 30px;}
-	.type_02 > p { float: right;}
+
+	.type_01 h3 { margin: 40px 0 20px; font-size: 25px;}
+	.type_02 h3 { margin: 35px 0 20px; font-size: 25px;}
+
+	@media screen and (max-width: 1200px) {
+		.type_text { font-size: 15px; line-height: 20px;}
+
+		.type_01 h3 { margin: 60px 0 10px; font-size: 22px;}
+		.type_02 h3 { margin: 55px 0 10px; font-size: 22px;}
+	}
+
+	@media screen and (max-width: 1024px) {
+		.type_01 h3, .type_02 h3 { margin: 0px 0 10px;}
+	}
+
+	@media screen and (max-width: 800px) {
+		.type_01 h3, .type_02 h3 { margin: 30px 0 10px;}		
+	}
+	
+
+	.type_01 { max-width: 1220px; padding: 0 10px; margin: auto;}
+	.type_01:after { content: ""; display: block; clear: left;}
+
+		.type_01 .type_img { float: left;}
+		.type_01 .type_text { float: left; padding-left: 4%;}
+
+	.type_02 { max-width: 1220px; padding: 0 10px; margin: 50px auto 0;}
+	.type_02:after { content: ""; display: block; clear: left;}
+		
+		.type_02 .type_img { float: right;}
+		.type_02 .type_text { float: left; padding-right: 4%;}
+
+	@media screen and (max-width: 800px) {
+		.type_01 .type_text, .type_02 .type_text { padding-left: 0;}
+	}
+		
 
 
 /* 메뉴 리스트 */
