@@ -49,13 +49,13 @@ header:after { content: ""; display: block; clear: both;}
 	.about_us { width: 100%; max-width: 1200px; margin: 80px auto; box-sizing: border-box; overflow: hidden;}
 		.about_us > div { display: inline-block; vertical-align: bottom;}
 			
-		.main01_text { width: 36%; font-size: 15px; line-height: 24px; opacity: 0;}
+		.main01_text { width: 36%; font-size: 15px; line-height: 24px; opacity: 0; margin-top: 80px;}
 			.main01_text > p { text-align: right; margin-top: 20px;}
 				.main01_text button { border: 1px solid #74634b; background: #fff; padding: 10px 10px; font-size: 13px; color: #74634b; cursor: pointer;}
 					.main01_text button img { display: inline-block; margin-left: 30px; vertical-align: middle;}
 		
 		.main01_img { width: 54%; margin-left: 8.6%;}
-			.main01_img > img { width: 100%; opacity: 0;}
+			.main01_img > img { width: 100%; opacity: 0; margin-top: 80px;}
 		
 	
 	/* best_menu */

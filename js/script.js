@@ -21,9 +21,10 @@ $(function() {
 	about_us()
 	function about_us() {
 		var roll = $(window).scrollTop();
-		
+		console.log(roll)
+
 		if(roll >= 0) {
-			$(".main01_text, .main01_img > img").animate({"opacity" : "1.0", "margin-top" : "0px"}, 1000);
+			$(".main01_text, .main01_img > img").animate({"opacity" : "1.0", "margin-top" : "0px"}, 1500);
 		}
 	}
 	
