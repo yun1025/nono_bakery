@@ -1,4 +1,7 @@
-	@chartset 'utf-8';
+@chartset 'utf-8';
+
+/* 배너 */
+#sub_contents > p > img { width: 100%;}
 
 /* 베이커리 소개 */
 .insa { margin-bottom: 50px;}
@@ -192,7 +195,7 @@
 		
 		
 /* 공지사항 */
-.notice_page { max-width: 1220px; margin: 0 auto 80px; padding: 0 10px;}
+.notice_page { max-width: 1220px; margin: 80px auto; padding: 0 10px;}
 
 	.sub_notice_list  { font-size: 15px; width: 100%; text-align: center; margin-bottom: 50px; word-break: keep-all; line-height: 22px; border-spacing: 0;}
 		.sub_notice_list  th { padding: 10px 0; background: #f3e9e1; font-weight: 800;}
