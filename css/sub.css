@@ -63,10 +63,15 @@
 
 
 /* 메뉴 리스트 */
-.menu_list_warp { max-width: 1220px; margin: auto; padding: 50px 10px 20px; background: none;}
-	.con_title { font-size: 25px;}
-		.con_title > span { font-size: 14px;}
-		.con_title > p { margin: 15px 0;}
+.menu_list_warp { text-align: center; margin: 90px auto 60px;}
+.menu_list_warp:after { content: ""; display: block; clear: both;}
+
+	.con_title { font-size: 32px; margin-bottom: 18px;}
+	
+	.menu_list_warp p span { font-size: 15px;}
+		.menu_list_warp .home { color: #999;}
+		.menu_list_warp .tag { display: inline-block; padding: 0 10px;}
+	
 				
 	.menu_list { max-width: 1240px; margin: auto; overflow: hidden; box-sizing: border-box;}
 		.menu_list > li { float: left; width: 31.7%; margin: 0 10px 50px;}
