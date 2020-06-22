@@ -302,8 +302,9 @@
 	.nutrition_list { width: 100%; margin-top: 80px; border-spacing: 0; font-size: 15px;}
 		
 		.nutrition_list th { color: #523f31; padding: 10px 0; border-top: 2px solid #523f31; border-bottom: 1px solid #ccc; background: #fff9f4; padding: 12px 0;}
-		.nutrition_list td { padding: 15px 20px; border-bottom: 1px solid #ccc; text-align: center; word-break: keep-all; line-height: 22px;}
+		.nutrition_list th:first-child { width: 12%;}
+		.nutrition_list th:nth-child(2) { width: 30%;}
 		
-		.nutrition_list td:first-child { width: 12%;}
-		.nutrition_list td:nth-child(2) { width: 30%; border-left: 1px solid #ccc; border-right: 1px solid #ccc;}
+		.nutrition_list td { padding: 15px 20px; border-bottom: 1px solid #ccc; text-align: center; word-break: keep-all; line-height: 22px;}
+		.nutrition_list td:nth-child(2) { border-left: 1px solid #ccc; border-right: 1px solid #ccc;}
 		.nutrition_list tr:last-child td { border-bottom: 2px solid #523f31;}
