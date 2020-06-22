@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>노노베이커리</title>
+		<meta charset="utf-8">
+		
+		<!-- css -->
+		<link href="../css/style.css" rel="stylesheet">
+		<link href="../css/style_1200.css" rel="stylesheet" media="screen and (max-width: 1200px)">
+		<link href="../css/sub.css" rel="stylesheet">		
+		
+		<!-- jquery -->
+		<link href="../js/jquery-ui.css" rel="stylesheet">
+		
+		<script src="../js/jquery-1.12.3.js"></script>
+		<script src="../js/jquery-ui.js"></script>
+		
+		<!-- script -->
+		<script src="../js/sub.js"></script>
+	</head>
+	
+	<body>
+		<!-- header -->
+		<header>
+			<h1><a href="../index.html"><img src="../images/logo.png" alt="노노베이커리 로고" title="노노베이커리 로고"></a></h1>
+			
+			<nav class="menu">
+				<ul>
+					<li>
+						<a href="sub_1-1.html">베이커리 소개</a>
+					</li>
+					<li>
+						<a href="sub_2-1.html">베이커리 메뉴</a>
+						
+						<ul class="sub_menu">
+							<li><a href="sub_2-1.html">저탄수빵</a></li>
+							<li><a href="sub_2-2.html">키토빵</a></li>
+							<li><a href="sub_2-3.html">비건빵</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="sub_3-1.html">디저트 메뉴</a>
+						
+						<ul class="sub_menu">
+							<li><a href="sub_3-1.html">베이커리류</a></li>
+							<li><a href="sub_3-2.html">케이크류</a></li>
+							<li><a href="sub_3-3.html">과자류</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="sub_4-1.html">커뮤니티</a>
+						
+						<ul class="sub_menu">
+							<li><a href="sub_4-1.html">공지사항</a></li>
+							<li><a href="sub_4-2.html">이벤트</a></li>
+							<li><a href="sub_4-3.html">자주묻는 질문</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header> <!-- //header -->
+		
+		
+		<!-- sub_contents -->
+		<section id="sub_contents">
+			<h2 class="hidden">서브 내용</h2>
+			
+			<p><img src="../images/sub_04-3.png" alt="영양정보 이미지"></p>
+			
+			<section class="menu_list_warp">
+				<h3 class="con_title">영양정보</h3>
+				
+				<p>
+					<a href="../index.html" class="home">HOME</a>
+					<span class="tag">&gt;</span>
+					<a href="sub_5-1.html">영양정보</a>
+				</p>
+			</section>
+			
+			<!-- nutrition -->
+			<section class="nutrition">
+				<h2 class="hidden">영양 정보</h2>
+				
+				<table class="nutrition_search">
+					<tr>
+						<th><label for="group">분류</label></th>
+						<td>
+							<select class="group">
+								<option value="none">전체보기</option>
+								<optgroup label="베이커리 메뉴">
+									<option value="">저탄수빵</option>
+									<option value="">키토빵</option>
+									<option value="">비건빵</option>
+								</optgroup>
+								<optgroup label="디저트 메뉴">
+									<option value="">베이커리류</option>
+									<option value="">케이크류</option>
+									<option value="">과자류</option>
+								</optgroup>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="product">제품명</label></th>
+						<td><input type="text" name="product" id="product" placeholder="제품명을 입력해주세요" class="input-text"></td>
+					</tr>					
+					<tr>
+						<th><label for="allergy">알레르기</label></th>
+						<td>
+							<input type="checkbox" name="allergy" id="wheat" value="wheat">
+							<label for="wheat" class="box"></label>
+							<label for="wheat" class="label">통밀가루</label>
+							
+							<input type="checkbox" name="allergy" id="egg" value="egg">
+							<label for="egg" class="box"></label>
+							<label for="egg" class="label">계란</label>
+							
+							<input type="checkbox" name="allergy" id="milk" value="milk">
+							<label for="milk" class="box"></label>
+							<label for="milk" class="label">우유</label>
+							
+							<input type="checkbox" name="allergy" id="soybean_milk" value="soybean_milk">
+							<label for="soybean_milk" class="box"></label>
+							<label for="soybean_milk" class="label">두유</label>
+							
+							<input type="checkbox" name="allergy" id="yogurt" value="yogurt">
+							<label for="yogurt" class="box"></label>
+							<label for="yogurt" class="label">요거트</label>
+							
+							<input type="checkbox" name="allergy" id="butter" value="butter">
+							<label for="butter" class="box"></label>
+							<label for="butter" class="label">버터</label>
+							
+							<input type="checkbox" name="allergy" id="sour_cream" value="sour_cream">
+							<label for="sour_cream" class="box"></label>
+							<label for="sour_cream" class="label">사워크림</label>
+							
+							<input type="checkbox" name="allergy" id="cheese" value="cheese">
+							<label for="cheese" class="box"></label>
+							<label for="cheese" class="label">치즈</label>
+							
+							<input type="checkbox" name="allergy" id="walnut" value="walnut">
+							<label for="walnut" class="box"></label>
+							<label for="walnut" class="label"><span>호두</span></label>
+							
+							<input type="checkbox" name="allergy" id="peanut" value="peanut">
+							<label for="peanut" class="box"></label>
+							<label for="peanut" class="label"><span>땅콩</span></label>
+							
+							<input type="checkbox" name="allergy" id="chick_peas" value="chick_peas">
+							<label for="chick_peas" class="box"></label>
+							<label for="chick_peas" class="label">병아리콩</label>
+							
+							<input type="checkbox" name="allergy" id="almond" value="almond">
+							<label for="almond" class="box"></label>
+							<label for="almond" class="label"><span>아몬드</span></label>
+							
+							<input type="checkbox" name="allergy" id="oatmeal" value="oatmeal">
+							<label for="oatmeal" class="box"></label>
+							<label for="oatmeal" class="label"><span>오트밀</span></label>
+							
+							<input type="checkbox" name="allergy" id="oats" value="oats">
+							<label for="oats" class="box"></label>
+							<label for="oats" class="label"><span>귀리</span></label>
+							
+							<input type="checkbox" name="allergy" id="cinnamon" value="cinnamon">
+							<label for="cinnamon" class="box"></label>
+							<label for="cinnamon" class="label"><span>시나몬</span></label>
+							
+							<input type="checkbox" name="allergy" id="cocoa" value="cocoa">
+							<label for="cocoa" class="box"></label>
+							<label for="cocoa" class="label"><span>코코아</span></label>
+							
+							<input type="checkbox" name="allergy" id="chocolate" value="chocolate">
+							<label for="chocolate" class="box"></label>
+							<label for="chocolate" class="label"><span>초콜릿</span></label>
+							
+							<input type="checkbox" name="allergy" id="banana" value="banana">
+							<label for="banana" class="box"></label>
+							<label for="banana" class="label"><span>바나나</span></label>
+							
+							<input type="checkbox" name="allergy" id="apple" value="apple">
+							<label for="apple" class="box"></label>
+							<label for="apple" class="label"><span>사과</span></label>
+							
+							<input type="checkbox" name="allergy" id="lemon" value="lemon">
+							<label for="lemon" class="box"></label>
+							<label for="lemon" class="label"><span>레몬</span></label>
+							
+							<input type="checkbox" name="allergy" id="strawberry" value="strawberry">
+							<label for="strawberry" class="box"></label>
+							<label for="strawberry" class="label"><span>딸기</span></label>
+							
+							<input type="checkbox" name="allergy" id="blueberry" value="blueberry">
+							<label for="blueberry" class="box"></label>
+							<label for="blueberry" class="label"><span>블루베리</span></label>
+							
+							<input type="checkbox" name="allergy" id="honey" value="honey">
+							<label for="honey" class="box"></label>
+							<label for="honey" class="label"><span>꿀</span></label>
+							
+							<input type="checkbox" name="allergy" id="coffee" value="coffee">
+							<label for="coffee" class="box"></label>
+							<label for="coffee" class="label"><span>커피</span></label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<input type="button" value="검색" class="button">
+						</td>
+					</tr>
+				</table> <!-- //nutrition_search -->
+				
+				
+				<table class="nutrition_list">
+					<tr>
+						<th>분류</th>
+						<th>제품명</th>
+						<th>알레르기 성분</th>
+					</tr>
+					
+					<!-- 베이커리 메뉴-->
+					<!-- 저탄수빵 -->
+					<tr>
+						<td>저탄수빵</td>
+						<td>통통 통밀빵</td>
+						<td>
+							<span class="wheat">국내산 통밀가루</span>,
+							<span class="milk">무지방 우유</span>,
+							이스트,
+							소금
+						</td>
+					</tr>
+					<tr>
+						<td>저탄수빵</td>
+						<td>치즈폭발! 치즈빵</td>
+						<td>
+							<span class="almond">아몬드 가루</span>,
+							베이킹파우더, 
+							<span class="egg">달걀</span>,
+							<span class="butter">버터</span>, 
+							<span class="sour cream">사워크림</span>, 
+							<span class="cheese">슈레드 체더 치즈(자연치즈)</span>
+						</td>
+					</tr>
+					<tr>
+						<td>저탄수빵</td>
+						<td>겉바속촉 바나나 스콘</td>
+						<td>
+							<span class="wheat">국내산 통밀가루</span>,
+							베이킹파우더,
+							베이킹소다,
+							<span class="banana">바나나</span>,
+							<span class="soybean_milk">유기농 두유</span>,
+							포도씨유,
+							미숫가루
+						</td>
+					</tr>
+					<tr>
+						<td>저탄수빵</td>
+						<td>풍미가득 시나몬롤</td>
+						<td>
+							<span class="wheat">국내산 통밀가루</span>,
+							<span class="milk">무지방 우유</span>,
+							<span class="lemon">레몬즙</span>,
+							<span class="cinnamon">시나몬 가루</span>,
+							<span class="almond">아몬드</span>,
+							<span class="honey">꿀</span>
+						</td>
+					</tr> <!-- //저탄수빵 -->
+					
+					<!-- 키토빵 -->
+					<tr>
+						<td>키토빵</td>
+						<td>통통 통밀빵</td>
+						<td>
+							<span class="wheat">국내산 통밀가루</span>,
+							<span class="milk">무지방 우유</span>,
+							이스트,
+							소금
+						</td>
+					</tr>
+					<tr>
+						<td>키토빵</td>
+						<td>치즈폭발! 치즈빵</td>
+						<td>
+							<span class="almond">아몬드 가루</span>,
+							베이킹파우더, 
+							<span class="egg">달걀</span>,
+							<span class="butter">버터</span>, 
+							<span class="sour cream">사워크림</span>, 
+							<span class="cheese">슈레드 체더 치즈(자연치즈)</span>
+						</td>
+					</tr>
+					<tr>
+						<td>키토빵</td>
+						<td>겉바속촉 바나나 스콘</td>
+						<td>
+							<span class="wheat">국내산 통밀가루</span>,
+							베이킹파우더,
+							베이킹소다,
+							<span class="banana">바나나</span>,
+							<span class="soybean_milk">유기농 두유</span>,
+							포도씨유,
+							미숫가루
+						</td>
+					</tr>
+					<tr>
+						<td>키토빵</td>
+						<td>풍미가득 시나몬롤</td>
+						<td>
+							<span class="wheat">국내산 통밀가루</span>,
+							<span class="milk">무지방 우유</span>,
+							<span class="lemon">레몬즙</span>,
+							<span class="cinnamon">시나몬 가루</span>,
+							<span class="almond">아몬드</span>,
+							<span class="honey">꿀</span>
+						</td>
+					</tr> <!-- //키토빵 -->
+					
+					<!-- 비건빵 -->
+					<tr>
+						<td>비건빵</td>
+						<td>통통 통밀빵</td>
+						<td>
+							<span class="wheat">국내산 통밀가루</span>,
+							<span class="milk">무지방 우유</span>,
+							이스트,
+							소금
+						</td>
+					</tr>
+					<tr>
+						<td>비건빵</td>
+						<td>치즈폭발! 치즈빵</td>
+						<td>
+							<span class="almond">아몬드 가루</span>,
+							베이킹파우더, 
+							<span class="egg">달걀</span>,
+							<span class="butter">버터</span>, 
+							<span class="sour cream">사워크림</span>, 
+							<span class="cheese">슈레드 체더 치즈(자연치즈)</span>
+						</td>
+					</tr>
+					<tr>
+						<td>비건빵</td>
+						<td>겉바속촉 바나나 스콘</td>
+						<td>
+							<span class="wheat">국내산 통밀가루</span>,
+							베이킹파우더,
+							베이킹소다,
+							<span class="banana">바나나</span>,
+							<span class="soybean_milk">유기농 두유</span>,
+							포도씨유,
+							미숫가루
+						</td>
+					</tr>
+					<tr>
+						<td>비건빵</td>
+						<td>풍미가득 시나몬롤</td>
+						<td>
+							<span class="wheat">국내산 통밀가루</span>,
+							<span class="milk">무지방 우유</span>,
+							<span class="lemon">레몬즙</span>,
+							<span class="cinnamon">시나몬 가루</span>,
+							<span class="almond">아몬드</span>,
+							<span class="honey">꿀</span>
+						</td>
+					</tr> <!-- //비건빵 -->
+
+					<!-- 디저트 메뉴 -->
+					<!-- 베이커리류 -->
+					<tr>
+						<td>베이커리류</td>
+						<td>부드러운 빵에 크림 한주먹 올린 버터 머핀</td>
+						<td>
+							<span class="butter">자연 버터</span>,
+							<span class="oatmeal">오트밀 가루</span>,
+							베이킹 파우더,
+							유기농 스테비아,
+							<span class="oatmeal milk">오트밀크</span>
+						</td>
+					</tr>
+					<tr>
+						<td>베이커리류</td>
+						<td>과일반 시트반 베리 타르트</td>
+						<td>
+							<span class="chick_peas">병아리콩</span>,
+							<span class="oatmeal">오트밀</span>,
+							대추야자,
+							<span class="almond milk">아몬드 우유</span>,
+							메이플 시럽,
+							바닐라 농축액,
+							<span class="strawberry">딸기</span>,
+							<span class="blueberry">블루베리</span>
+						</td>
+					</tr>
+					<tr>
+						<td>베이커리류</td>
+						<td>칼로리 DOWN! 맛은 UP! 요거트 티라미수</td>
+						<td>
+							<span class="wheat">국내산 통밀가루</span>,
+							<span class="yogurt">플레인요거트</span>,
+							<span class="cheese">크림치즈</span>,
+							<span class="cocoa">무가당 코코아 파우더</span>,
+							<span class="coffee">커피</span>
+						</td>
+					</tr>
+					<tr>
+						<td>베이커리류</td>
+						<td>부드러울까 바삭할까 알 수 없는 쿠키</td>
+						<td>
+							<span class="oatmeal">오트밀</span>,
+							물,
+							<span class="cinnamon">시나몬 가루</span>,
+							베이킹파우더,
+							베이킹소다 ,
+							<span class="peanut">땅콩 버터</span>,
+							<span class="banana">바나나</span>,
+							소금
+						</td>
+					</tr> <!-- //베이커리류 -->
+					
+					<!-- 케이크류 -->
+					<tr>
+						<td>케이크류</td>
+						<td>부드러운 빵에 크림 한주먹 올린 버터 머핀</td>
+						<td>
+							<span class="butter">자연 버터</span>,
+							<span class="oatmeal">오트밀 가루</span>,
+							베이킹 파우더,
+							유기농 스테비아,
+							<span class="oatmeal milk">오트밀크</span>
+						</td>
+					</tr>
+					<tr>
+						<td>케이크류</td>
+						<td>과일반 시트반 베리 타르트</td>
+						<td>
+							<span class="chick_peas">병아리콩</span>,
+							<span class="oatmeal">오트밀</span>,
+							대추야자,
+							<span class="almond milk">아몬드 우유</span>,
+							메이플 시럽,
+							바닐라 농축액,
+							<span class="strawberry">딸기</span>,
+							<span class="blueberry">블루베리</span>
+						</td>
+					</tr>
+					<tr>
+						<td>케이크류</td>
+						<td>칼로리 DOWN! 맛은 UP! 요거트 티라미수</td>
+						<td>
+							<span class="wheat">국내산 통밀가루</span>,
+							<span class="yogurt">플레인요거트</span>,
+							<span class="cheese">크림치즈</span>,
+							<span class="cocoa">무가당 코코아 파우더</span>,
+							<span class="coffee">커피</span>
+						</td>
+					</tr>
+					<tr>
+						<td>케이크류</td>
+						<td>부드러울까 바삭할까 알 수 없는 쿠키</td>
+						<td>
+							<span class="oatmeal">오트밀</span>,
+							물,
+							<span class="cinnamon">시나몬 가루</span>,
+							베이킹파우더,
+							베이킹소다 ,
+							<span class="peanut">땅콩 버터</span>,
+							<span class="banana">바나나</span>,
+							소금
+						</td>
+					</tr> <!-- //케이크류 -->
+					
+					<!-- 과자류 -->
+					<tr>
+						<td>과자류</td>
+						<td>부드러운 빵에 크림 한주먹 올린 버터 머핀</td>
+						<td>
+							<span class="butter">자연 버터</span>,
+							<span class="oatmeal">오트밀 가루</span>,
+							베이킹 파우더,
+							유기농 스테비아,
+							<span class="oatmeal milk">오트밀크</span>
+						</td>
+					</tr>
+					<tr>
+						<td>과자류</td>
+						<td>과일반 시트반 베리 타르트</td>
+						<td>
+							<span class="chick_peas">병아리콩</span>,
+							<span class="oatmeal">오트밀</span>,
+							대추야자,
+							<span class="almond milk">아몬드 우유</span>,
+							메이플 시럽,
+							바닐라 농축액,
+							<span class="strawberry">딸기</span>,
+							<span class="blueberry">블루베리</span>
+						</td>
+					</tr>
+					<tr>
+						<td>과자류</td>
+						<td>칼로리 DOWN! 맛은 UP! 요거트 티라미수</td>
+						<td>
+							<span class="wheat">국내산 통밀가루</span>,
+							<span class="yogurt">플레인요거트</span>,
+							<span class="cheese">크림치즈</span>,
+							<span class="cocoa">무가당 코코아 파우더</span>,
+							<span class="coffee">커피</span>
+						</td>
+					</tr>
+					<tr>
+						<td>과자류</td>
+						<td>부드러울까 바삭할까 알 수 없는 쿠키</td>
+						<td>
+							<span class="oatmeal">오트밀</span>,
+							물,
+							<span class="cinnamon">시나몬 가루</span>,
+							베이킹파우더,
+							베이킹소다 ,
+							<span class="peanut">땅콩 버터</span>,
+							<span class="banana">바나나</span>,
+							소금
+						</td>
+					</tr> <!-- //과자류 -->
+					
+				</table> <!-- //nutrition_list -->				
+			</section> <!-- //nutrition -->
+			
+			
+		<!-- footer -->
+		<footer>
+			<nav>
+				<ul class="f_nav">
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>				
+					<li><a href="#">이용안내</a></li>				
+					<li><a href="#">배송안내</a></li>				
+					<li><a href="#">카카오톡 플러스친구</a></li>				
+				</ul>
+			</nav>
+			
+			<h2><a href="#"><img src="../images/b_logo.png" alt="노노베이커리 로고" title="노노베이커리 로고"></a></h2>
+			
+			<p>
+				법인명(상호) : 노노베이커리   |   대표자 : 김뫄뫄   |   개인정보책임자 : 김뫄뫄   |   사업자등록번호 : 000-00-00000<br>
+				통신판매업 신고 : 성남 제 000000호   |   전화 : 031-000-0000   |   팩스 : 031-000-0000<br>
+				주소 : 경기 성남시 중원구 광명로 4 (성남동, 아트팰리스) 4, 5층<br>
+				
+				<strong>COPYRIGHT ⓒ 2020 노노베이커리 ALL RIGHTS RESERVED</strong>
+			</p>
+		</footer> <!-- //footer -->
+	</body>
+</html>
