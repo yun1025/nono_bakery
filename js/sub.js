@@ -15,41 +15,63 @@ $(function() {
 function nutrition() {
 	var input_group = $(".group").val();			//분류 기본값
 	var group = "";
+	
 	var input_product = $("#product").val();		//제품명 기본값
 	var product =""
 	
-	//$(".loading").height( $(".nutrition_list tbody").height() ).show();
+	var input_length = $(".nutrition_search input:checkbox:checked").length;		//알레르기 기본값
+	var check_val = Array();
 	
-	/* 분류 */
-	if(input_group != "none") {
-		for(i=1; i < $(".nutrition_list tr").length; i++) {
+	$(".nutrition_list .loading").height( $(".nutrition_list tbody").height() ).show();
+	
+	$(".nutrition_list tr").show();
+	$(".nutrition_list td").removeClass("hide");
+	
+	
+	for(i=1; i < $(".nutrition_list tr").length; i++) {
+		/* 분류 */
+		if(input_group != "none") {
 			group = $(".nutrition_list tr:eq("+ i +") td:eq(0)").children("span").attr("class");
 			
-			if(input_group == group) {
-				$(".nutrition_list tr:eq("+ i +")").removeClass("hide");				
-			}else if(input_group != group) {
-				$(".nutrition_list tr:eq("+ i +")").addClass("hide");
+			if(input_group == group) {						//분류 포함
+				$(".nutrition_list tr:eq("+ i +") td:eq(0)").removeClass("hide");				
+			}else if(input_group != group) {				//분류 미포함
+				$(".nutrition_list tr:eq("+ i +") td:eq(0)").addClass("hide");
 			}
+			
 		}
-	}else {
-		$(".nutrition_list tr").removeClass("hide");
-	}
-	
-	/* 제품명 */	
-	if(input_product != "") {
-		for(i=1; i < $(".nutrition_list tr").length; i++) {
+		
+		/* 제품명 */
+		if(input_product != "") {
 			product = $(".nutrition_list tr:eq("+ i +") td:eq(1)").html();
 			
-			if(product.indexOf(input_product) != -1) {
-				$(".nutrition_list tr:eq("+ i +")").removeClass("hide");
-			}else if(product.indexOf(input_product) == -1) {
-				$(".nutrition_list tr:eq("+ i +")").addClass("hide");
+			if(product != undefined && product.indexOf(input_product) > -1) {					//제품명 포함
+				$(".nutrition_list tr:eq("+ i +") td:eq(1)").removeClass("hide");
+			}else if(product != undefined && product.indexOf(input_product) == -1) {			//제품명 미포함
+				$(".nutrition_list tr:eq("+ i +") td:eq(1)").addClass("hide");
 			}
 		}
-	}
+		
+		
+		/* 알레르기 */
+		if(input_length > 0) {
+			for(y=0; y <= $(".nutrition_search input:checkbox").length; y++) {
+				if($(".nutrition_search input:checkbox").eq(y).is(":checked") == true) {			
+					check_val = $(".nutrition_search input:checkbox").eq(y).val();								//체크한 알레르기 재료의 class
+					
+					if($(".nutrition_list tr:eq("+ i +") td:eq(2) span").hasClass(check_val) == true) {			//체크한 알레르기 재료의 class 포함 여부
+						$(".nutrition_list tr:eq("+ i +") td:eq(2)").removeClass("hide");
+					}else {
+						$(".nutrition_list tr:eq("+ i +") td:eq(1)").addClass("hide");
+					}
+				}
+			}//for
+		}
+	}//for
+	
 	
 	setTimeout(function() {
-		$(".nutrition_list tr.hide td").fadeOut();
-		$(".nutrition_list tr:not(.hide) td").fadeIn();
+		$(".nutrition_list .hide").parents("tr").hide();
+		$(".nutrition_list .loading").hide();
 	}, 2000)	
 }

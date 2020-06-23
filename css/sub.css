@@ -274,35 +274,39 @@
 
 /* 영양정보 */	
 .nutrition { max-width: 1220px; margin: 0 auto 120px; padding: 0 10px;}
+.nutrition:after { content: ""; display: block; clear: both;}
 
 	/* 검색 영역 */
 	.nutrition_search { width: 100%; border: 1px solid #ccc; border-radius: 5px; font-size: 14px; padding: 10px 0;}
-		.nutrition_search th { width: 10%; text-align: right;}
+		.nutrition_search th { width: 10%; min-width: 63px; text-align: right;}
 		.nutrition_search td { padding: 15px 30px;}
 		
 			/* 분류 */
 			.group { padding: 5px 10px;}
 			
 			/* 제품명 */
-			#product { padding: 10px 20px; width: 40%; border-radius: 5px; border: 1px solid #ccc;}
+			#product { padding: 10px 20px; width: 60%; min-width: 220px; border-radius: 5px; border: 1px solid #ccc;}
 			
 			/* 알레르기 체크박스 */
 			.nutrition_search input[type='checkbox'] { display: none;}
 			.nutrition_search .box { display: inline-block; width: 20px; height: 20px; background: #fff; border: 1px solid #ccc; vertical-align: middle; cursor: pointer;}
 			.nutrition_search input[type='checkbox']:checked + .box { background: url('../images/checked.png');}
 			
-			.nutrition_search .label { display: inline-block; width: 83px; padding: 0 10px 0 5px; margin-bottom: 20px; cursor: pointer;}
+			.nutrition_search td > p { float: left; width: 13%; min-width: 97px; margin: 0 10px 20px 0; cursor: pointer; box-sizing: border-box;}
 			
 			/* 버튼 */
+			
+			
 			.nutrition_search tr:last-child td { text-align: center;}
 			.nutrition_search .button { padding: 15px 70px; border: none; border-radius: 5px; background: #523f31; font-weight: 600; color: #fff; cursor: pointer;}
 			
 			
 	/* 검색 결과  리스트 */
 	.nutrition_list { position: relative; margin-top: 80px;}
-		.nutrition_list .loading { width: 100%; background: rgba(255, 255, 255, 0.6); position: absolute; top: 44px; display: none;}
+		.nutrition_list .loading { width: 100%; background: rgba(255, 255, 255, 0.8); position: absolute; top: 44px; min-height: 500px; display: none;}
+			.nutrition_list .loading img { position: absolute; top: 50px; left: 45%; width: 20%;}
 	
-		.nutrition_list table { width: 100%; border-spacing: 0; font-size: 15px;}
+		.nutrition_list table { width: 100%; border-spacing: 0; font-size: 15px; border-bottom: 2px solid #523f31;}
 			
 			.nutrition_list th { color: #523f31; padding: 10px 0; border-top: 2px solid #523f31; border-bottom: 1px solid #ccc; background: #fff9f4; padding: 12px 0;}
 			.nutrition_list th:first-child { width: 12%;}
@@ -310,4 +314,3 @@
 			
 			.nutrition_list td { padding: 15px 20px; border-bottom: 1px solid #ccc; text-align: center; word-break: keep-all; line-height: 22px;}
 			.nutrition_list td:nth-child(2) { border-left: 1px solid #ccc; border-right: 1px solid #ccc;}
-			.nutrition_list tr:last-child td { border-bottom: 2px solid #523f31;}
