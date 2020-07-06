@@ -11,7 +11,7 @@ header:after { content: ""; display: block; clear: both;}
 	.nav { width: 100%; max-width: 1200px; margin: auto;}
 		.nav > ul{ float: right; font-size: 13px; margin-top: 10px;}
 			.nav > ul li { float: left; border-right: 1px solid #999; margin-left: 30px; padding-right: 30px;}
-			.nav > ul li:last-child { border-right: none; margin-left: 30px; padding-right: 0;}
+			.nav > ul li:last-child { border-right: none; margin-left: 30px; padding-right: 20px;}
 			.nav .action { color: #523f31;}
 	
 	header > h1 { float: left; width: 100%; text-align: center; margin: 20px auto 40px;}
