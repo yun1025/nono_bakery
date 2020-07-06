@@ -16,10 +16,13 @@ header:after { content: ""; display: block; clear: both;}
 	
 	header > h1 { float: left; width: 100%; text-align: center; margin: 20px auto 40px;}
 	
+	.mobile_menu { display: none;}
+	
 	.menu { float: left; width: 100%; border-top: 1px solid #999; border-bottom: 1px solid #999;}
 		.menu > ul { max-width: 1200px; margin: auto; font-size: 16px; font-weight: 600;}
 			.menu > ul > li { float: left; width: 25%; text-align: center; position: relative;}
 				.menu > ul > li > a { display: inline-block; width: 100%; padding: 15px 0;}
+				.menu > ul > li.active > a { color: #523f31; text-decoration: underline; font-weight: 600;}
 				.menu > ul > li a:hover { color: #523f31; text-decoration: underline; font-weight: 600;}
 		
 		.menu > ul li:hover .sub_menu { display: block;}

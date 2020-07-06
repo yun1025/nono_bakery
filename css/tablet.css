@@ -1,4 +1,22 @@
 @chartset 'utf-8';
+
+/* header */
+header > h1 { width: 90%; margin: 30px auto; padding-left: 10%; box-sizing: border-box;}
+	header > h1 img { width: 180px;}
+
+.mobile_menu { display: inline-block; float: left; width: 10%; margin-top: 52px; text-align: center; cursor: pointer;}
+	.mobile_menu img { display: inline-block; vertical-align: middle;}
+	.mobile_menu span { display: inline-block; vertical-align: middle;}
+
+.menu { display: none;}
+	.menu > ul > li { width: 100%;}
+		.menu > ul > li a { padding: 20px 0;}
+	
+	.menu > ul li:hover .sub_menu { display: none;}
+	.sub_menu { position: inherit; width: 100%; margin-left: 0%; border: none; background: #efefef;}
+		.sub_menu > li a { padding: 18px 0;}
+
+
 /* slider */
 .left_button { left: 2%;}
 .right_button { right: 2%;}
