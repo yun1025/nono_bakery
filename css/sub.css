@@ -1,4 +1,26 @@
 @chartset 'utf-8';
+/* header */
+@media screen and (max-width: 768px) {
+.nav > ul { width: 100%; padding: 0 10px; margin: 10px 0 0; box-sizing: border-box;}
+	.nav > ul li { width: 33%; padding: 0; margin: 0; text-align: center;}
+	.nav > ul li:last-child { margin-left: 0;}
+	
+header > h1 { width: 90%; margin: 30px auto; padding-left: 10%; box-sizing: border-box;}
+	header > h1 img { width: 180px;}
+
+.mobile_menu { display: inline-block; float: left; width: 10%; margin-top: 52px; text-align: center; cursor: pointer;}
+	.mobile_menu img { display: inline-block; vertical-align: middle;}
+	.mobile_menu span { display: inline-block; vertical-align: middle;}
+
+.menu { display: none;}
+	.menu > ul > li { width: 100%;}
+		.menu > ul > li a { padding: 20px 0;}
+	
+	.menu > ul li:hover .sub_menu { display: none;}
+	.sub_menu { position: inherit; width: 100%; margin-left: 0%; border: none; background: #efefef;}
+		.sub_menu > li a { padding: 18px 0;}
+}
+
 
 /* 배너 */
 #sub_contents > p > img { width: 100%;}
@@ -13,13 +35,16 @@
 	.menu_list_warp p span { font-size: 15px;}
 		.menu_list_warp .home { color: #999;}
 		.menu_list_warp .tag { display: inline-block; padding: 0 10px;}
-	
+
+@media screen and (max-width: 768px) {
+	.menu_list_warp { margin: 60px auto 60px;}
+}	
 
 /* 메뉴 상세 카테고리 */
 .menu_info_warp { text-align: left; margin: 0 0 10px; font-size: 15px;}
 		.menu_info_warp .home { color: #999;}
 			.menu_info_warp .tag { display: inline-block; padding: 0 10px;}
-
+			
 
 /* 베이커리 소개 */
 .insa { margin-bottom: 50px;}
@@ -96,7 +121,11 @@
 	}
 	
 	@media screen and (max-width: 618px) {
-		.menu_list > li { width: 45%; height: 380px; margin: 0 10px 20px;}
+		.menu_list > li { width: 45%; height: 400px; margin: 0 10px 0;}
+	}
+	
+	@media screen and (max-width: 500px) {
+		.menu_list > li { height: 380px;}
 	}
 	
 	.img_warp { width: 100%; overflow: hidden;}
@@ -105,7 +134,7 @@
 	.menu_list .b_l_title { font-size: 20px; font-weight: 600; margin: 15px 0 8px;}
 		.menu_list .b_l_title a { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 	.menu_list .b_l_con { font-size: 16px; width: 100%; word-spacing: -2px;}
-		.menu_list .b_l_con a { color: #888; display: block; white-space: normal; line-height: 1.2; height: 58px; overflow: hidden; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
+		.menu_list .b_l_con a { color: #888; display: block; white-space: normal; line-height: 1.2; min-height: 58px; overflow: hidden; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
 		
 	@media screen and (max-width: 875px) {
 		.menu_list .b_l_title { font-size: 18px;}
@@ -122,13 +151,18 @@
 /* 페이징 버튼 */
 .page_number { text-align: center; margin-bottom: 80px;}
 	.page_number > ul { display: inline-block; font-size: 14px;}	
-		.page_number > ul li { float: left; padding: 10px 14px; border: 1px solid #999; margin-left: -1px; cursor: pointer;}
+		.page_number > ul li { float: left; padding: 10px 14px; border: 1px solid #ccc; margin-left: -1px; cursor: pointer;}
 		.page_number > ul .action { background: #efefef; font-weight: 600; color: #523f31;}
 
 	
 
 /* 메뉴 상세 */
 #sub_menu_info { max-width: 1220px; margin: 50px auto 0; padding: 0 10px;}
+
+@media screen and (max-width: 768px) {
+	#sub_menu_info .menu_list_warp { margin: -30px auto 60px;}
+}
+
 
 .info_img { width: 48%; max-width: 560px; float: left; margin-right: 20px;}
 	.info_img img { width: 100%;}
@@ -203,7 +237,7 @@
 		
 		
 /* 공지사항 */
-.notice_page { max-width: 1220px; margin: 80px auto; padding: 0 10px;}
+.notice_page { max-width: 1220px; margin: auto; padding: 0 10px;}
 
 	.sub_notice_list  { font-size: 15px; width: 100%; text-align: center; margin-bottom: 50px; word-break: keep-all; line-height: 22px; border-spacing: 0;}
 		.sub_notice_list  th { padding: 12px 0; color: #523f31; border-top: 2px solid #523f31; border-bottom: 1px solid #ccc; background: #fff9f4; font-weight: 800;}

@@ -1,6 +1,10 @@
 @chartset 'utf-8';
 
 /* header */
+.nav > ul { width: 100%; padding: 0 10px; margin: 10px 0 0; box-sizing: border-box;}
+	.nav > ul li { width: 33%; padding: 0; margin: 0; text-align: center;}
+	.nav > ul li:last-child { margin-left: 0;}
+	
 header > h1 { width: 90%; margin: 30px auto; padding-left: 10%; box-sizing: border-box;}
 	header > h1 img { width: 180px;}
 
@@ -36,7 +40,7 @@ header > h1 { width: 90%; margin: 30px auto; padding-left: 10%; box-sizing: bord
 }	
 
 @media screen and (max-width: 562px) {
-	.best_list > li { width: 46%; margin-right: 10px;}
+	.best_list > li { width: 46%; margin-right: 1%;}
 	.best_list > li:last-child { display: none;}
 }
 	
@@ -53,19 +57,19 @@ header > h1 { width: 90%; margin: 30px auto; padding-left: 10%; box-sizing: bord
 /* map */
 .map_01 { width: 100%; margin-top: 0px;}
 
-.map_02 { float: left; width: 48%; margin-top: 20px; padding-bottom: 40px; border-right: 1px solid #ccc;}
-.map_03 { float: right;  width: 48%; margin-top: 20px;}
+.map_02 { float: left; width: 48%; margin-top: 40px; padding-bottom: 40px; border-right: 1px solid #ccc;}
+.map_03 { float: right;  width: 48%; margin-top: 40px;}
 
 @media screen and (max-width: 565px) {
-	.map ul li span { width: 100%;}
-	.map ul li p { width: 100%;}
-	
-	.map_02 { padding-bottom: 0;}
-	.map_02 ul li { margin-bottom: 15px;}
-	
-	.map_02 > p { font-size: 25px;}
+	.map_02 { width: 100%; margin-top: 30px; padding-bottom: 0; border-right: none;}
+	.map_03 { width: 100%; margin-top: 30px;}
 }
 
+
 /* footer */
-.f_nav { max-width: 460px;}
-		.f_nav > li { padding: 20px 10px;}
+.f_nav { max-width: 100%;}
+	.f_nav > li { width: 20%; box-sizing: border-box; word-break: keep-all;}
+	
+@media screen and (max-width: 500px) {
+	.f_nav > li { width: 33%; padding: 10px 0;}
+}

@@ -1,4 +1,22 @@
 $(function() {
+	/* 메인 메뉴 */
+	//테블릿 - 메뉴 슬라이드
+	$(".mobile_menu").click(function() {
+		$(".menu").slideToggle();
+	});
+	
+	//테블릿 - 서브 메뉴 슬라이드
+	$(".menu > ul > li").click(function() {
+		if( $(window).width() <= 750 ) {
+			$(".menu > ul > li > a").attr("href", "#");
+			$(".menu > ul > li:nth-child(1) a").attr("href", "sub_1-1.html");
+			
+			$(".menu > ul > li").removeClass("active");
+			$(".menu > ul > li .sub_menu").slideUp();
+			$(this).addClass("active").children(".sub_menu").slideDown();
+		}
+	});
+	
 	/* 자주묻는 질문 */
 	$(".qna > dl dt").click(function() {
 		if( $(this).hasClass("on") == false ) {		//중복 실행 방지

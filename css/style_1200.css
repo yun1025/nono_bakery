@@ -98,8 +98,3 @@
 	.f_nav { max-width: 660px;}
 		.f_nav > li { padding: 20px 30px;}
 }
-
-@media screen and (max-width: 678px) {
-	.f_nav { max-width: 410px; font-size: 11px;}
-		.f_nav > li { padding: 20px 10px;}
-}
