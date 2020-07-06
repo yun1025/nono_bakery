@@ -98,3 +98,12 @@
 	.f_nav { max-width: 660px;}
 		.f_nav > li { padding: 20px 30px;}
 }
+
+@media screen and (max-width: 768px) {
+	.f_nav { max-width: 100%;}
+		.f_nav > li { width: 20%; box-sizing: border-box; word-break: keep-all;}
+}
+		
+@media screen and (max-width: 500px) {
+	.f_nav > li { width: 33%; padding: 10px 0;}
+}
